@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.banner {
+	width: 1200px;
+	height: 153px;
+	margin: 0 auto;
+	
+}
+.logo img {
+	margin:25px;
+	width: 171px;
+	height: 49px;
+	float: left;
+}
+
+.navigation div {
+	float: left;
+	text-align: center;
+	width: 90px;
+	height: 88px;
+	line-height: 88px;
+	font-size: 18px;
+}
+.navigation div:hover {
+	color: #31C27C;
+}
+.navigation div:nth-child(1) {
+	background-color: #31c27c;
+	color: #FFFFFF;
+}
+.searchbox {
+	position: relative;
+	width: 212px;
+	height: 38px;
+	float: left;
+	margin-top: 28px;
+	margin-left: 20px;
+	line-height: 38px;
+}
+.dropbox {
+	width: 210px;
+	border: 1px solid #cdcdcd;
+	border-top: none;
+	position: relative;
+	top:38px ;
+	background-color: #FFFFFF;
+	display: none;
+	z-index: 1;
+}
+.dropbox li:hover {
+	background-color: #31C27C;
+}
+.dropbox ul li{
+	position: relative;
+	text-align: center;
+	width: 210px;
+	height: 36px;
+	list-style: none;
+	font-size: 14px;
+	text-align: left;
+	z-index: 1;
+}
+.dropbox li span:nth-child(1) {
+	color: #ff6ca9;
+	margin: 10px;
+}
+.dropbox li span:nth-child(2) {
+	color: #333333;
+}
+.dropbox li span:nth-child(3) {
+	position: absolute;
+	right: 5px;
+	color: #999999;
+	font-size: 12px;
+}
+.input {
+	width: 198px;
+	height: 34px;
+	position: absolute;
+	padding-left: 10px;
+	color: #757575;
+	
+}
+.searchicon {
+	background-image: url(../img/search.png);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	z-index: 1;
+	right: 5px;
+	top: 11px;
+	
+}
+.login {
+	float: left;
+	font-size: 16px;
+	line-height: 88px;
+	margin-left: 25px;
+}
+.login:hover {
+	color: #31C27C;
+}
+.open {
+	width: 115px;
+	height: 40px;
+	background-color: #31C27C;
+	float: left;
+	color: #FFFFFF;
+	line-height: 40px;
+	font-size: 14px;
+	margin-left: 27px;
+	margin-top: 25px;
+	border: none;
+}
+.open:hover {
+	background-color: #2caf6f;
+}
+.openpay {
+	width: 87px;
+	height: 38px;
+	background-color: #FFFFFF;
+	border: 1px solid #cdcdcd;
+	margin-left: 10px;
+	float: left;
+	margin-top: 25px;
+}
+.openpay:hover {
+	background-color: #ededed;
+}
+.line {
+	width: 1200px;
+	height: 88px;
+	border-bottom: 1px #f2f2f2 solid;
+}

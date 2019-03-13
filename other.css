@@ -1,0 +1,163 @@
+.bannerbottom {
+	clear: both;
+	width: 1200px;
+	height: 53px;
+	text-align: center;
+	line-height: 53px;
+}
+.bannerbottom span {
+	margin-left: 50px;
+	font-size: 15px;
+	
+}
+.bannerbottom span:hover {
+	color: #2CAF6F;
+}
+
+/*歌单推荐样式*/
+.musicarea {
+	position: relative;
+	width: 100%;
+	height:530px ;
+}
+
+.playlist {
+	position: relative;
+	width: 100%;
+	height: 78px;
+	text-align: center;
+	background-color: #f3f3f3;
+	font-size: 32px;
+}
+.playlist span {
+	width: 200px;
+	letter-spacing: 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -100px;
+	color: #333333;
+	font-size: 30px;
+	font-weight: bold;
+}
+.words {
+	height: 83px;
+	background-color:#f6f6f6;
+	text-align: center;
+	line-height: 83px;
+	font-size: 15px;
+	
+}
+.words span:nth-child(1){
+	color: #2CAF6F;
+}
+.words span {
+	margin-left: 54px;
+	color: #333333 ;
+}
+.words span:hover {
+	color: #2CAF6F;
+}
+
+/*图片展示区域*/
+.intropicture {
+	position: relative;
+	width: 100%;
+	height: 245px;
+}
+/*左右切换图片按钮*/
+.intropicture .picleft {
+	position: absolute;
+	left: 0px;
+	top: 80px;
+}
+.picleft img {
+	width: 0px;
+	height: 109px;
+	transition:width 0.5s;
+    -moz-transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+.picright img {
+	width: 0px;
+	height: 109px;
+	transition:width 0.5s;
+    -moz-transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+.intropicture .picright {
+	position: absolute;
+	right: 0px;
+	top: 80px;
+}
+/*装10张图的容器*/
+.halfimgs {
+	position: relative;
+	width: 1198px;
+	height: 227px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.musickinds {
+	width: 3000px;
+	position: absolute;
+	/*left: 0;*/
+}
+.pic {
+	float: left;
+	position: relative;
+	overflow: hidden; /*不让图片放大溢出盒子区域*/
+	margin-left: 13px;
+}
+.pic .imgs {
+	width: 224px;
+	height: 227px;
+	
+}
+.pic .imgs:hover {
+	transform: scale(1.2,1.2);
+}
+.pic .imgs {
+	transition: all 0.5s;
+}
+.pic .circleimg {
+	top: 80px;
+	left: 80px;
+	position: absolute;
+	width: 62px;
+	height: 62px;
+	display: none;
+}
+/*文字展示区域*/
+.intro {
+	width: 100%;
+	height: 132px;
+	background-color: #fafafa;
+}
+.fatherintro2 {
+	/*position: relative;*/
+	width: 1198px;
+	overflow: hidden;
+	margin:0 auto;
+}
+.intro2 {
+	width: 3000px;
+	position: relative;
+	left: 0px;
+}
+.intro2 .p1 {
+	width: 224px;
+	float: left;
+	margin-left: 13px;
+	font-size: 13px;
+}
+.intro2 span:hover {
+	color: #31C27C;
+}
+.intro p {
+	margin-top: 10px;
+	color: #999999;
+}
+
