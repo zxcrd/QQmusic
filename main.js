@@ -47,31 +47,45 @@ window.onload = function(){
 				imgleft.style.width="0px";
 				imgright.style.width="0px";
 			}
-			//轮播图
+			//手动切换图
+			var timer;
 			var count = 0;
-		
+			//向左滑动切换
 			left.onclick = function(){
-				var mleft = musickinds.offsetLeft;
-				//为什么不进入判断
-				if(mleft == -1185){
-//					mleft = mleft +1185;
-					musickinds.style.left =parseInt(musickinds.style.left)+1185+"px";		
-					console.log(musickinds.style.left);
-				}
-				mleft = mleft - 1185;
-				musickinds.style.left = mleft +"px";
+				count++;
+				var target =-1200-count*(pics[5].offsetLeft-pics[0].offsetLeft);
+				timer = setInterval(function(){
+					musickinds.style.left = musickinds.offsetLeft - 20+"px";
+					if(musickinds.offsetLeft<target){
+						musickinds.style.left = target+"px";
+					}
+					if(musickinds.offsetLeft==target){
+						if(count == 2){
+							count = 0;
+							musickinds.style.left=-1200+"px";
+						}
+						clearInterval(timer);
+					}
+				},10)
 			}
+			//向右滑动切换图片
 			right.onclick = function(){
-				var mleft = musickinds.offsetLeft;
-				//为什么不进入判断
-				if(mleft == 0){
-					mleft = mleft -1185;
-					musickinds.style.left =mleft+"px";			
-				}
-				mleft = mleft + 1185;
-				musickinds.style.left = mleft +"px";
-				console.log(musickinds.style.left);
-			}
+				count--;
+				var target =-1200-count*(pics[5].offsetLeft-pics[0].offsetLeft);
+				timer = setInterval(function(){
+					musickinds.style.left = musickinds.offsetLeft + 20+"px";
+					if(musickinds.offsetLeft>target){
+						musickinds.style.left = target+"px";
+					}
+					if(musickinds.offsetLeft==target){
+						if(count == -1){
+							count = 1;
+							musickinds.style.left=-2400+"px";
+						}
+						clearInterval(timer);
+					}
+				},10)
+				
 		}
-		
+	}	
       
