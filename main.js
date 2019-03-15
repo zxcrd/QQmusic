@@ -32,13 +32,6 @@ window.onload = function(){
 					circleimg[this.index].style.display="none";
 				}
 			}
-////			var list =document.getElementsByTagName("ul")[0].children;
-////				console.log(list);
-////	        for(var i = 0;i<list.length; i++){
-////	        	list.onclick = function(){
-////	        		alert("aaa");
-////	        	}
-//	        }
 			musicarea.onmousemove = function(){
 				imgleft.style.width="77px";
 				imgright.style.width="77px";
